@@ -1,0 +1,35 @@
+:root {
+  --deep-color: rgb(47, 85, 151);
+  --shallow-color: rgb(143, 170, 220);
+  --footer-header-color: rgb(0, 112, 192);
+}
+
+u {
+  font-size: large;
+}
+
+.item {
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.footer-header {
+  writing-mode: vertical-rl;
+  letter-spacing: 10px;
+  color: var(--footer-header-color);
+  border: 0;
+}
+
+.footer-col {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+article {
+  border-bottom: 1px solid var(--deep-color);
+}
+.footer-box {
+  display: flex;
+  padding-top:0px;
+  gap: 70px;
+}

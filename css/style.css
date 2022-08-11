@@ -1,0 +1,226 @@
+:root {
+  --deep-color: rgb(134, 214, 29);
+  --shallow-color: rgb(194, 227, 180);
+  --text-shadow: rgba(101, 101, 101, 0.95);
+}
+
+* {
+  box-sizing: border-box;
+  font-family: '微軟正黑體';
+}
+.w-50 {
+  width: 50%;
+}
+.w-70 {
+  width: 70%;
+}
+.w-30 {
+  width: 30%;
+}
+.m-0 {
+  margin: 0;
+}
+.primary-header {
+  font-size: 20px;
+  font-weight: bolder;
+  color: var(--shallow-color);
+  text-shadow: 1px 0px 1px var(--text-shadow);
+  border-bottom: 2px solid;
+  padding-bottom: 0.5px;
+}
+
+.text-header {
+  font-size: 30px;
+  font-weight: bolder;
+  color: var(--deep-color);
+  text-shadow: 1px 0px 1px var(--text-shadow);
+  padding-bottom: 15px;
+  border-bottom: 1px solid var(--deep-color);
+}
+.page-header {
+  font-size: 42px;
+  font-weight: bolder;
+  color: var(--deep-color);
+  text-shadow: 1px 0px 1px var(--text-shadow);
+  margin-top: -5px;
+  margin-bottom: -10px;
+}
+.section-header {
+  color: var(--deep-color);
+  font-weight: bolder;
+  font-size: 22px;
+  padding-top: 20px;
+  margin-bottom: 5px;
+  text-shadow: 1px 0px 1px var(--text-shadow);
+  border-bottom: 3px dotted var(--deep-color);
+}
+.section-header span {
+  border-bottom: 3px solid;
+}
+.footer-header {
+  font-size: 24px;
+  font-weight: bolder;
+  color: var(--deep-color);
+  text-shadow: 1px 0px 1px var(--text-shadow);
+  display: inline-block;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-top:1px solid var(--deep-color)
+}
+.container {
+  width: 50%;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.container::after {
+  position: absolute;
+  content: '';
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  top: 220px;
+  left: -200px;
+  background-color: rgb(235, 235, 235);
+  z-index: -1;
+}
+
+.wrapper {
+  display: flex;
+  position: relative;
+}
+
+.wrapper::after {
+  content: '';
+  position: absolute;
+  top: 18px;
+  left: 0px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 27px 0 27px 25px;
+  border-color: transparent transparent transparent var(--deep-color);
+}
+
+.wrapper::before {
+  content: '';
+  position: absolute;
+  top: 90px;
+  left: 0px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 20px 0 20px 20px;
+  border-color: transparent transparent transparent var(--shallow-color);
+}
+
+.text-box {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+article {
+  padding-bottom: 70px;
+}
+
+.cube-box {
+  position: relative;
+  overflow: hidden;
+}
+
+.cube-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 11%;
+  left: 25%;
+  width: 160px;
+  height: 160px;
+  background-color: var(--deep-color);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.cube-top img {
+  transform: rotate(-45deg);
+}
+
+.cube-middle {
+  position: absolute;
+  top: 37%;
+  left: 65%;
+  width: 130px;
+  height: 130px;
+  background-color: var(--shallow-color);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.cube-bottom {
+  position: absolute;
+  top: 62%;
+  left: 40%;
+  width: 150px;
+  height: 150px;
+  background-color: var(--deep-color);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.footer-box {
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 70px;
+}
+
+.item-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding-left: 15px;
+}
+
+.item {
+  position: relative;
+  font-size: 20px;
+  font-weight: bolder;
+  color: rgb(180, 199, 231);
+  text-shadow: 1px 0px 1px rgba(27, 26, 26, 0.95);
+  z-index: 2;
+}
+
+.item::after {
+  position: absolute;
+  z-index: -1;
+  content: '';
+  width: 20px;
+  height: 20px;
+  top: -5px;
+  left: -3px;
+  background-color: var(--shallow-color);
+  transform: rotate(45deg);
+}
+
+.item::before {
+  position: absolute;
+  z-index: -1;
+  content: '';
+  width: 20px;
+  height: 20px;
+  top: 5px;
+  left: -3px;
+  background-color: var(--shallow-color);
+  transform: rotate(45deg);
+}

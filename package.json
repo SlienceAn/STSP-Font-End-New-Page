@@ -1,0 +1,12 @@
+{
+  "name": "STSP-New",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "push": "git push --set-upstream https://github.com/SlienceAn/STSP-Font-End-New-Page.git master"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

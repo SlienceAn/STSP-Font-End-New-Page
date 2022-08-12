@@ -12,12 +12,26 @@
     .section-header {
         border: 0;
     }
+
+    .img-box {
+        text-align: center;
+    }
+
+    .img-box img {
+        width: 100%;
+    }
+
+    .img-box span {
+        font-size: 25px;
+        font-weight: bolder;
+        color: rgb(64, 64, 64);
+    }
 </style>
 
 <body>
     <div class="container">
         <div class="wrapper">
-            <div class="text-box w-70">
+            <div class="text-box w-cube">
                 <span class="primary-header">台南園區</span>
                 <div class="text-header">周圍環境品質監測</div>
                 <article>
@@ -48,7 +62,7 @@
                     </section>
                 </article>
             </div>
-            <div class="cube-box w-30">
+            <div class="cube-box">
                 <div class="cube-top">
                     <img src="image/logo.png" width="130" />
                 </div>
@@ -56,9 +70,15 @@
                 <div class="cube-bottom"></div>
             </div>
         </div>
-        <footer class="footer-box" style="display: flex;align-items: flex-end;">
-            <img src="image/air-02.jpg" alt="image/air-02.jpg" />
-            <img src="image/air-03.jpg" alt="image/air-03.jpg" />
+        <footer class="footer-box" style="display: flex;align-items: flex-end;gap: 15px;margin-top: -20%;">
+            <div class="img-box" style="width:45%;">
+                <img src="image/air-02.jpg" alt="image/air-02.jpg" />
+                <span>臺南園區</span>
+            </div>
+            <div class="img-box" style="width: 55%;">
+                <img src="image/air-03.jpg" alt="image/air-03.jpg" />
+                <span>高雄園區</span>
+            </div>
         </footer>
     </div>
 </body>

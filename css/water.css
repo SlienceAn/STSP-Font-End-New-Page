@@ -25,11 +25,15 @@ u {
   gap: 25px;
   align-items: center;
 }
+.footer-col a {
+  display: block;
+  text-decoration: none;
+}
 article {
   border-bottom: 1px solid var(--deep-color);
 }
 .footer-box {
   display: flex;
-  padding-top:0px;
+  padding-top: 0px;
   gap: 70px;
 }

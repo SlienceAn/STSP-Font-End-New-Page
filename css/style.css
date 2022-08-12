@@ -17,6 +17,9 @@
 .w-30 {
   width: 30%;
 }
+.w-cube {
+  width: calc(100% - 250px);
+}
 .m-0 {
   margin: 0;
 }
@@ -65,7 +68,7 @@
   display: inline-block;
   padding-top: 25px;
   padding-bottom: 25px;
-  border-top:1px solid var(--deep-color)
+  border-top: 1px solid var(--deep-color);
 }
 .container {
   width: 50%;
@@ -127,6 +130,7 @@ article {
 }
 
 .cube-box {
+  width: 250px;
   position: relative;
   overflow: hidden;
 }
@@ -136,8 +140,8 @@ article {
   align-items: center;
   justify-content: center;
   position: absolute;
-  top: 11%;
-  left: 25%;
+  top: 10%;
+  left: 30%;
   width: 160px;
   height: 160px;
   background-color: var(--deep-color);
@@ -165,7 +169,24 @@ article {
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-
+.cube-middle::after {
+  content: '';
+  position: absolute;
+  top: 100px;
+  left: -100px;
+  width: 100px;
+  height: 1px;
+  background-color: var(--shallow-color);
+}
+.cube-middle::before {
+  content: '';
+  position: absolute;
+  top: 110px;
+  left: -75px;
+  width: 80px;
+  height: 1px;
+  background-color: var(--shallow-color);
+}
 .cube-bottom {
   position: absolute;
   top: 62%;

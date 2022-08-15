@@ -121,7 +121,6 @@
 .text-box {
   padding-left: 30px;
   padding-right: 30px;
-  height: 650px;
   min-height: 650px;
 }
 
@@ -209,10 +208,10 @@ article {
 }
 
 .item-box {
-  display: flex;
+  /* display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  padding-left: 15px;
+  padding-left: 15px; */
 }
 
 .item {
@@ -222,6 +221,8 @@ article {
   color: rgb(180, 199, 231);
   text-shadow: 1px 0px 1px rgba(27, 26, 26, 0.95);
   z-index: 2;
+  text-decoration: none;
+  display:block;
 }
 
 .item::after {

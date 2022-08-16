@@ -130,6 +130,7 @@ article {
 
 .cube-box {
   width: 250px;
+  height: 650px;
   position: relative;
   overflow: hidden;
 }
@@ -222,7 +223,9 @@ article {
   text-shadow: 1px 0px 1px rgba(27, 26, 26, 0.95);
   z-index: 2;
   text-decoration: none;
-  display:block;
+  display: block;
+  margin-bottom: 20px;
+  white-space: nowrap;
 }
 
 .item::after {

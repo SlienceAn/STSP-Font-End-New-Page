@@ -71,8 +71,6 @@
   border-top: 1px solid var(--deep-color);
 }
 .container {
-  width: 50%;
-  margin: 0 auto;
   position: relative;
   overflow: hidden;
 }
